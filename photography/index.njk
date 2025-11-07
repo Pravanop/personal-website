@@ -18,7 +18,7 @@ layout: "base.njk"
   <div class="photo-grid">
     {% for photo in photography.toy %}
       <figure class="photo-card">
-        <img src="{{ photo.image }}" alt="{{ photo.title }}">
+        <img src="{{ photo.image | url }}" alt="{{ photo.title }}">
         <figcaption>
           <strong>{{ photo.title }}</strong><br>
           <em>{{ photo.caption }}</em><br>
