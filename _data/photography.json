@@ -1,0 +1,102 @@
+{
+  "toy": [
+    {
+      "title": "Hopping by a rose",
+      "image": "/assets/images/hopping.jpeg",
+      "caption": "Grasshopper passing by",
+      "year": "2018"
+    },
+    {
+      "title": "The Dark Knight Falls",
+      "image": "/assets/images/thedarkknightfalls.jpg",
+      "caption": "The batman performs his deadliest sin",
+      "year": "2025"
+    },
+    {
+      "title": "Why so Serious?",
+      "image": "/assets/images/whysoserious.jpeg",
+      "caption": "The interrogation scene in The Dark Knight",
+      "year": "2025"
+    },
+    {
+      "title": "Busy bee",
+      "image": "/assets/images/busybee.jpeg",
+      "caption": "A bee taking its share",
+      "year": "2024"
+    },
+    {
+      "title": "Empty Birdhouse",
+      "image": "/assets/images/birdhouse.jpeg",
+      "caption": "Found a birdhouse that felt haunted",
+      "year": "2024"
+    },
+    {
+      "title": "A cup of Coffee",
+      "image": "/assets/images/coffee.jpeg",
+      "caption": "A coffee that I didn't want to drink",
+      "year": "2021"
+    },
+    {
+      "title": "Folded Flower",
+      "image": "/assets/images/foldedflower.jpeg",
+      "caption": "An origami flower I folded",
+      "year": "2023"
+    },
+    {
+      "title": "Let us put a smile on that face",
+      "image": "/assets/images/joker.jpg",
+      "caption": "My favourite villain",
+      "year": "2024"
+    },
+    {
+      "title": "Bloom",
+      "image": "/assets/images/redflower.jpeg",
+      "caption": "The first time a Dahlia bloomed in my garden",
+      "year": "2020"
+    }
+  ],
+  "regular": [
+    {
+      "title": "Evening Sky",
+      "image": "/assets/images/purplesun.png",
+      "caption": "The sun setting over the Arabian Sea",
+      "year": "2020"
+    },
+    {
+      "title": "Lost in Ghoom",
+      "image": "/assets/images/lost.png",
+      "caption": "The second highest railyway station in the world",
+      "year": "2019"
+    },
+    {
+      "title": "Pretty Dome",
+      "image": "/assets/images/amesceiling.jpg",
+      "caption": "Stunning Architecture in Ames, Iowa",
+      "year": "2025"
+    },
+    {
+      "title": "A Glass of Wine",
+      "image": "/assets/images/merlot.jpeg",
+      "caption": "A Barrel of Wine in Denver",
+      "year": "2024"
+    },
+    {
+      "title": "A River of Trees",
+      "image": "/assets/images/yosemite.jpeg",
+      "caption": "The Yosemite Valley",
+      "year": "2023"
+    },
+    {
+      "title": "Power",
+      "image": "/assets/images/power.jpg",
+      "caption": "Capitol, DC",
+      "year": "2024"
+    },
+    {
+      "title": "Sunflower Valley",
+      "image": "/assets/images/namchi.jpeg",
+      "caption": "Namchi, Sikkim, India",
+      "year": "2019"
+    }
+  ]
+}

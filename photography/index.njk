@@ -1,0 +1,66 @@
+---
+title: "Photography"
+layout: "base.njk"
+---
+
+<!-- <h1>Photography</h1> -->
+<p class="subtitle">The World Through My Lens</p>
+
+<div class="slider-container">
+  <span>Zoom in</span>
+  <input type="range" id="photoSlider" min="0" max="1" step="1" value="0">
+  <span>Zoom out</span>
+</div>
+
+<!-- Galleries -->
+<div id="toyGallery" class="photo-section visible">
+  <h2>Micro</h2>
+  <div class="photo-grid">
+    {% for photo in photography.toy %}
+      <figure class="photo-card">
+        <img src="{{ photo.image }}" alt="{{ photo.title }}">
+        <figcaption>
+          <strong>{{ photo.title }}</strong><br>
+          <em>{{ photo.caption }}</em><br>
+          <small>{{ photo.year }}</small>
+        </figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+</div>
+
+<div id="regularGallery" class="photo-section hidden">
+  <h2>Macro</h2>
+  <div class="photo-grid">
+    {% for photo in photography.regular %}
+      <figure class="photo-card">
+        <img src="{{ photo.image }}" alt="{{ photo.title }}">
+        <figcaption>
+          <strong>{{ photo.title }}</strong><br>
+          <em>{{ photo.caption }}</em><br>
+          <small>{{ photo.year }}</small>
+        </figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  const slider = document.getElementById('photoSlider');
+  const toyGallery = document.getElementById('toyGallery');
+  const regularGallery = document.getElementById('regularGallery');
+
+  slider.addEventListener('input', () => {
+    if (slider.value === "0") {
+      toyGallery.classList.add('visible');
+      toyGallery.classList.remove('hidden');
+      regularGallery.classList.add('hidden');
+      regularGallery.classList.remove('visible');
+    } else {
+      toyGallery.classList.add('hidden');
+      toyGallery.classList.remove('visible');
+      regularGallery.classList.add('visible');
+      regularGallery.classList.remove('hidden');
+    }
+  });
+</script>

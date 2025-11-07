@@ -1,0 +1,19 @@
+---
+title: Sketchbook
+layout: base.njk
+---
+<!-- <h1>Sketchbook</h1> -->
+<p class="subtitle">My visual experiments — hover to learn more or reach out if a piece speaks to you.</p>
+
+<div class="sketch-grid">
+  {% for art in sketchbook %}
+    <div class="sketch-card">
+      <img src="{{ art.image }}" alt="{{ art.title }}">
+      <div class="sketch-overlay">
+        <h3>{{ art.title }}</h3>
+        <p>{{ art.medium }}</p>
+        <a href="mailto:youremail@domain.com?subject=Inquiry about '{{ art.title }}'">Inquire</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>

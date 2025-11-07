@@ -1,0 +1,40 @@
+---
+title: "Writing & Blog"
+layout: "base.njk"
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+---
+
+<div class="writing-page">
+  <!-- MAIN COLUMN -->
+ <main class="blog-list">
+<!--   <h1>Writing & Reflections</h1> -->
+  {% for post in posts | reverse %}
+    <article class="post-card">
+      {% if post.data.image %}
+        <div class="post-thumb">
+          <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+        </div>
+      {% endif %}
+      <div class="post-info">
+        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        <p class="post-date">{{ post.date | date("MMMM d, yyyy") }}</p>
+        <p>{{ post.templateContent | truncate(200, true, '...') | safe }}</p>
+        <a class="read-more" href="{{ post.url }}">Read More →</a>
+      </div>
+    </article>
+  {% endfor %}
+</main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="book-card">
+      <img src="/assets/images/book_cover.jpg" alt="Words of a Thinkaholic book cover">
+      <h3>Words of a Thinkaholic</h3>
+      <p>I put together my poems from different times and different moods... A collection that captures the tiny thrills, quiet truths, and unspoken moments of life — blending introspection, philosophy, and rhythm.</p>
+      <a href="https://www.amazon.com/dp/yourbooklink" target="_blank" class="btn-buy">Buy on Amazon</a>
+    </div>
+  </aside>
+</div>

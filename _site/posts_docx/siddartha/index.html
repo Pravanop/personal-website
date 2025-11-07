@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Thoughts on Herman Hesse&#39;s &#39;Siddhartha&#39;</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="page-body">
+  
+<header class="site-header">
+  <a href="/" class="logo">Pravan Omprakash</a>
+  <nav class="header-nav">
+    <a href="/sketchbook/">Sketchbook</a>
+    <a href="/writing/">Writing</a>
+    <a href="/photography/">Photography</a>
+    <a href="/animation/">Animation</a>
+    <a href="/about/">About</a>
+  </nav>
+</header>
+
+  <p>Siddartha <em>is a paradox, and leaves me more confused than I was.</em></p>
+<p>Siddhartha is the journey of a man through his life. The start of the
+book resembled that of The Buddha's journey and the misleading book
+covers and some pretentious reviews on the net made me think that this
+was indeed the journey of how Gowtama became The Buddha. However, this
+book is about a common man, a man who doesn't heed to the teachings of
+The Buddha. He didn't care what the <em><strong>words</strong></em> were; he gave importance
+to the <em><strong>experience</strong></em> indeed.</p>
+<p>According to me, the author was trying to answer a question that I have
+been trying to answer myself for the longest time. That is probably why
+this book has resonated so deeply with me.</p>
+<p>Why is there only <strong>one</strong> Buddha? Why is there only <strong>a single</strong>
+'Enlightened One'?</p>
+<p>The answer according to the author is that everyone paid attention to
+the words of the Buddha, but even he couldn't put his enlightenment into
+meaningful words. The experience that the Buddha had during his hour of
+enlightenment, cannot be communicated in any known way to others, and
+sadly died with the great one himself. Buddha gave us the four noble
+truths and eight-fold path, all which are virtuous and practical. Yet,
+nobody reached that stage of enlightenment.</p>
+<p>From this realization stemmed the true path of enlightenment for our
+Siddhartha, first as a householder, then a merchant, and finally to a
+ferryman. There are no great quotes, no striking comments on life.</p>
+<p>It is a man seeking the innermost part of his Self. That part of his
+Self which is truly him, which is not made up by him, which is not
+touched by others and even by himself. That part of himself from which
+he, <em>Siddhartha,</em> blooms. For me this is the true meaning of the word
+spirituality---the search for the untouched, ethereal spirit that
+defines the term '<em>I am</em>'.</p>
+<p>So why is the book a paradox?</p>
+<p>If the rotten planks in the ship of Theseus are replaced with new planks
+will it still be the ship of Theseus? Will the <em>Siddhartha</em>, who changes
+his thoughts and beliefs, who changes the food he eats --and mind you
+that same food makes him up---, who changes his very directions of his
+life quite a number of times. Is he still the same <em>Siddartha</em>? The
+quest to find that entrenched, embedded part of <em>you</em> seems to change
+<em>you</em> in all ways possible. What he finds out, I can't say...because
+that is the essence of this book. It is a paradox. The book teaches you
+to learn only from experience and not from any teaching. So, how am I
+supposed to learn from this book?</p>
+<p>And yet, if there is one thing that stood out in the book, it is to love
+and spread love irrespective of whatever comes in the way. I can only
+put it as vaguely as this, the rest needs to be known only by reading
+the book. Siddhartha was life altering to me in so many ways, I think I
+finally got some solace to my <em>seeking</em> nature, and maybe I will be able
+to become a <em>finding</em> person. But I know this for sure; henceforth I
+will only learn from experiences and their conclusions.</p>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="mailto:youremail@domain.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.instagram.com/yourusername" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.youtube.com/@yourchannel" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://twitter.com/yourhandle" target="_blank" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+  </div>
+  <p class="footer-text">
+  © Pravan Omprakash · All rights reserved
+</p>
+</footer>
+
+<!-- Global Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="expanded view">
+  <p id="lightbox-caption"></p>
+</div>
+
+<script>
+  // Lightbox JS
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxCaption = document.getElementById("lightbox-caption");
+  const closeBtn = document.querySelector(".lightbox .close");
+
+  document.addEventListener("click", e => {
+    if (e.target.matches(".photo-card img, .sketch-card img")) {
+      lightbox.style.display = "flex";
+      lightboxImg.src = e.target.src;
+      lightboxCaption.textContent = e.target.alt || "";
+      document.body.style.overflow = "hidden";
+    }
+    if (e.target === lightbox || e.target === closeBtn) {
+      lightbox.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
+</script>
+
+</body>
+</html>
