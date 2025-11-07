@@ -5,7 +5,7 @@ tags: [writing, thoughts, Sapiens]
 layout: "post.njk"
 ---
 
-<img src="/assets/images/sapiens.png"
+<img src="{{'/assets/images/sapiens.png'| url}}"
      alt="AI generated image of evolution"
      style="display:block; margin:1.5rem auto; max-width:400px; border-radius:8px;">
 <div style="text-align: justify">

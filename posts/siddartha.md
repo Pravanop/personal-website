@@ -5,7 +5,7 @@ tags: [writing, thoughts]
 layout: "post.njk"
 ---
 
-<img src="/assets/images/siddartha.webp"
+<img src="{{'/assets/images/siddartha.webp'|url}}"
      alt="AI generated Buddha"
      style="display:block; margin:1.5rem auto; max-width:600px; border-radius:8px;">
      
