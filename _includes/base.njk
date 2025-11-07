@@ -13,7 +13,7 @@
 <body class="{% if title == 'Pravan Omprakash' %}landing-body{% else %}page-body{% endif %}">
   {% if title != 'Pravan Omprakash' %}
 <header class="site-header">
-  <a href="/" class="logo">Pravan Omprakash</a>
+  <a href="{{ '/' | url }}" class="logo">Pravan Omprakash</a>
   <nav class="header-nav">
     <a href="{{ '/sketchbook/' | url }}">Sketchbook</a>
     <a href="{{ '/writing/' | url }}">Writing</a>
