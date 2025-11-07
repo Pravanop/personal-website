@@ -9,19 +9,18 @@ pagination:
 
 <div class="writing-page">
   <!-- MAIN COLUMN -->
- <main class="blog-list">
-<!--   <h1>Writing & Reflections</h1> -->
+<main class="blog-list grid">
   {% for post in posts | reverse %}
     <article class="post-card">
       {% if post.data.image %}
         <div class="post-thumb">
-          <img src="{{ post.data.image | url}}" alt="{{ post.data.title }}">
+          <img src="{{ post.data.image | url }}" alt="{{ post.data.title }}">
         </div>
       {% endif %}
       <div class="post-info">
         <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
         <p class="post-date">{{ post.date | date("MMMM d, yyyy") }}</p>
-        <p>{{ post.templateContent | truncate(200, true, '...') | safe }}</p>
+        <p>{{ post.templateContent | truncate(150, true, '...') | safe }}</p>
         <a class="read-more" href="{{ post.url | url }}">Read More →</a>
       </div>
     </article>
