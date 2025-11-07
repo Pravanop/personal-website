@@ -602,6 +602,12 @@ a:hover {
   max-height: 140px; /* limit height for balance */
 }
 
+.blog-list.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
 .post-thumb img {
   width: 100%;
   height: 100%;
