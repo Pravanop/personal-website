@@ -5,7 +5,7 @@ tags: [writing, play, shakespeare]
 layout: "post.njk"
 ---
 
-<img src="/assets/images/Adreamtoheaven.webp"
+<img src="{{'/assets/images/Adreamtoheaven.webp' | url}}"
      alt="AI generated greek tragedy play pose"
      style="display:block; margin:1.5rem auto; max-width:600px; border-radius:8px;">
 
