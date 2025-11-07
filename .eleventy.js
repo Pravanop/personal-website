@@ -20,7 +20,7 @@ eleventyConfig.addNunjucksGlobal("now", new Date());
       includes: "_includes",
       output: "_site"
     },
-    pathPrefix: "/pravan-personal-site/",
+    pathPrefix: "/",
     templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk"
