@@ -25,6 +25,12 @@
       "year": "2024"
     },
     {
+      "title": "Wizard Chess",
+      "image": "/assets/images/wizardchess.jpeg",
+      "caption": "LEGO recreation of a scene from Harry Potter",
+      "year": "2025"
+    },
+    {
       "title": "Empty Birdhouse",
       "image": "/assets/images/birdhouse.jpeg",
       "caption": "Found a birdhouse that felt haunted",
@@ -35,6 +41,12 @@
       "image": "/assets/images/coffee.jpeg",
       "caption": "A coffee that I didn't want to drink",
       "year": "2021"
+    },
+    {
+      "title": "Eerie Church",
+      "image": "/assets/images/haunted_church.jpg",
+      "caption": "Ominous weather over an old church",
+      "year": "2025"
     },
     {
       "title": "Folded Flower",
@@ -61,6 +73,12 @@
       "image": "/assets/images/purplesun.png",
       "caption": "The sun setting over the Arabian Sea",
       "year": "2020"
+    },
+    {
+      "title": "Snoozing Owl",
+      "image": "/assets/images/lazy_owl.jpg",
+      "caption": "A cute owl taking a nap",
+      "year": "2025"
     },
     {
       "title": "Lost in Ghoom",
