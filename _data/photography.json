@@ -13,7 +13,25 @@
       "year": "2025"
     },
     {
-      "title": "Why so Serious?",
+      "title": "Bond",
+      "image": "/assets/images/bond.jpeg",
+      "caption": "The name is Bond. James Bond.",
+      "year": "2025"
+    },
+    {
+      "title": "Introvert",
+      "image": "/assets/images/introvert.heic",
+      "caption": "A shy flower, yet to bloom fully.",
+      "year": "2025"
+    },
+    {
+      "title": "Coffee Break",
+      "image": "/assets/images/chewbecca.jpeg",
+      "caption": "Even intergalactic travelers need refuels",
+      "year": "2025"
+    },
+    {
+      "title": "Why So Serious?",
       "image": "/assets/images/whysoserious.jpeg",
       "caption": "The interrogation scene in The Dark Knight",
       "year": "2025"
@@ -55,6 +73,7 @@
       "caption": "My favourite villain",
       "year": "2024"
     },
+
     {
       "title": "Bloom",
       "image": "/assets/images/redflower.jpeg",

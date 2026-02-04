@@ -25,7 +25,7 @@
   },
   {
     "title": "Agnilochana",
-    "image": "/assets/images/Man & Beast.jpg",
+    "image": "/assets/images/Man & beast.jpg",
     "medium": "Digital Art",
     "year": "2025"
   },
@@ -55,7 +55,7 @@
   },
   {
     "title": "Frogs of Spring",
-    "image": "/assets/images/godfather.jpg",
+    "image": "/assets/images/frogs.heic",
     "medium": "LEGO art",
     "year": "2026"
   },
@@ -70,13 +70,6 @@
     "image": "/assets/images/blenderdoughnut.png",
     "medium": "3D render",
     "year": "2024"
-  },
-  
-  {
-    "title": "Twenty-One",
-    "image": "/assets/images/21.jpeg",
-    "medium": "Digital Art",
-    "year": "2025"
   },
   {
     "title": "I Am Become Death",
