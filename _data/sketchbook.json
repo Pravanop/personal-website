@@ -5,20 +5,59 @@
     "medium": "Digital Art",
     "year": "2025"
   },
-  
-  
-  
   {
     "title": "Churn",
-    "image": "/assets/images/Churn.jpg",
+    "image": "/assets/images/Churn.jpeg",
     "medium": "Digital Art",
     "year": "2025"
+  },
+  {
+    "title": "Sarathy",
+    "image": "/assets/images/Sarathy.jpg",
+    "medium": "Digital Art",
+    "year": "2026"
+  },
+  {
+    "title": "Parashu",
+    "image": "/assets/images/Parashu.jpg",
+    "medium": "Digital Art",
+    "year": "2025"
+  },
+  {
+    "title": "Agnilochana",
+    "image": "/assets/images/Man & Beast.jpg",
+    "medium": "Digital Art",
+    "year": "2025"
+  },
+  {
+    "title": "#10",
+    "image": "/assets/images/#10-A.jpg",
+    "medium": "Digital Art",
+    "year": "2026"
   },
   {
     "title": "Deluge",
     "image": "/assets/images/Deluge.jpg",
     "medium": "Digital Art",
     "year": "2025"
+  },
+  {
+    "title": "GOAT",
+    "image": "/assets/images/GOAT.heic",
+    "medium": "LEGO art",
+    "year": "2025"
+  },
+  {
+    "title": "Godfather",
+    "image": "/assets/images/godfather.jpg",
+    "medium": "LEGO mosaic",
+    "year": "2026"
+  },
+  {
+    "title": "Frogs of Spring",
+    "image": "/assets/images/godfather.jpg",
+    "medium": "LEGO art",
+    "year": "2026"
   },
   {
     "title": "Lost",
@@ -63,6 +102,4 @@
     "medium": "Pencil on Paper",
     "year": "2019"
   }
-  
-  
 ]

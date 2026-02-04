@@ -26,7 +26,7 @@
     },
     {
       "title": "Wizard Chess",
-      "image": "/assets/images/wizardchess.jpeg",
+      "image": "/assets/images/wizardschess.jpeg",
       "caption": "LEGO recreation of a scene from Harry Potter",
       "year": "2025"
     },
@@ -42,12 +42,7 @@
       "caption": "A coffee that I didn't want to drink",
       "year": "2021"
     },
-    {
-      "title": "Eerie Church",
-      "image": "/assets/images/haunted_church.jpg",
-      "caption": "Ominous weather over an old church",
-      "year": "2025"
-    },
+
     {
       "title": "Folded Flower",
       "image": "/assets/images/foldedflower.jpeg",
@@ -73,6 +68,12 @@
       "image": "/assets/images/purplesun.png",
       "caption": "The sun setting over the Arabian Sea",
       "year": "2020"
+    },
+    {
+      "title": "Eerie Church",
+      "image": "/assets/images/haunted_church.jpg",
+      "caption": "Ominous weather over an old church",
+      "year": "2025"
     },
     {
       "title": "Snoozing Owl",
