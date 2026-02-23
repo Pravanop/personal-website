@@ -575,6 +575,62 @@ a:hover {
   margin-bottom: 3rem;
 }
 
+.writing-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.page-title {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.bulletin {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.bulletin-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 20px;
+}
+
+.bulletin-item h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.bulletin-item a {
+  text-decoration: none;
+  color: #a855f7;
+}
+
+.bulletin-meta {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin-top: 6px;
+}
+
+.bulletin-desc {
+  margin-top: 8px;
+  opacity: 0.85;
+}
+
+.bulletin-link a {
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
 
 /* ===============================
    BLOG CARD WITH IMAGE
