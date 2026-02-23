@@ -631,6 +631,72 @@ a:hover {
   white-space: nowrap;
 }
 
+.blog-list{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.blog-item{
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.02);
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
+}
+
+.blog-item:hover{
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.03);
+  border-color: rgba(255,255,255,0.14);
+}
+
+.blog-top{
+  display:flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.blog-title{
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.blog-title a{
+  text-decoration: none;
+  color: rgba(255,255,255,0.03);
+}
+
+.blog-title a:hover{
+  color: #a855f7;
+}
+
+.blog-date{
+  font-size: 0.9rem;
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
+.blog-excerpt{
+  margin: 10px 0 12px;
+  opacity: 0.85;
+  line-height: 1.55;
+  max-width: 80ch;
+}
+
+.blog-read{
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: var(--purple);
+  opacity: 0.9;
+}
+
+.blog-read:hover{ opacity: 1; }
 
 /* ===============================
    BLOG CARD WITH IMAGE

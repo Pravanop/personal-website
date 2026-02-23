@@ -1,48 +1,49 @@
 ---
 title: "Writing & Blog"
 layout: "base.njk"
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
 ---
 
-<section class="writing-page">
+<section class="writing-page-wrapper">
 
-  <h1 class="page-title">Writing & Publications</h1>
-  <p class="page-subtitle">
-    Stories, poems, and essays published across platforms.
-  </p>
+  <header class="writing-header">
+    <h1>Writing & Publications</h1>
+    <p class="writing-subtitle">
+      Stories, poems, and essays across platforms.
+    </p>
+  </header>
 
-  <div class="bulletin">
 
-    {% for post in collections.posts | reverse %}
-      <div class="bulletin-item">
+  <!-- BLOG POSTS -->
+  <main class="blog-list">
 
-        <div class="bulletin-main">
-          <h2>
-            <a href="{{ post.data.link or post.url | url }}" target="_blank">
-              {{ post.data.title }}
-            </a>
+    {% for post in posts | reverse %}
+      <article class="blog-item">
+
+        <div class="blog-top">
+          <h2 class="blog-title">
+            <a href="{{ post.url | url }}">{{ post.data.title }}</a>
           </h2>
 
-          <p class="bulletin-meta">
-            {{ post.data.place }} •
+          <time class="blog-date">
             {{ post.date | date("MMMM d, yyyy") }}
-          </p>
-
-          {% if post.data.description %}
-            <p class="bulletin-desc">
-              {{ post.data.description }}
-            </p>
-          {% endif %}
+          </time>
         </div>
 
-        <div class="bulletin-link">
-          <a href="{{ post.data.link or post.url | url }}" target="_blank">
-            Read →
-          </a>
-        </div>
+        <p class="blog-excerpt">
+          {{ post.templateContent | truncate(170, true, '...') | safe }}
+        </p>
 
-      </div>
+        <a class="blog-read" href="{{ post.url | url }}">
+          Read →
+        </a>
+
+      </article>
     {% endfor %}
 
-  </div>
+  </main>
 
 </section>
