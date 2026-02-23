@@ -9,6 +9,7 @@ pagination:
 
 <section class="writing-page-wrapper">
 
+  <!-- HEADER -->
   <header class="writing-header">
     <h1>Writing & Publications</h1>
     <p class="writing-subtitle">
@@ -17,33 +18,78 @@ pagination:
   </header>
 
 
-  <!-- BLOG POSTS -->
-  <main class="blog-list">
+  <!-- PUBLICATIONS / NEWS -->
+  {% if publications %}
+  <section class="publications-section">
 
-    {% for post in posts | reverse %}
-      <article class="blog-item">
+    <h2 class="section-title">Published Work</h2>
 
-        <div class="blog-top">
-          <h2 class="blog-title">
-            <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-          </h2>
+    <div class="news-list">
+      {% for item in publications | reverse %}
+        <div class="news-item">
 
-          <time class="blog-date">
-            {{ post.date | date("MMMM d, yyyy") }}
-          </time>
+          <div class="news-left">
+            <div class="news-title">
+              <a href="{{ item.link }}" target="_blank" rel="noopener">
+                {{ item.title }}
+              </a>
+            </div>
+
+            <div class="news-meta">
+              {{ item.place }} • {{ item.date | date("MMMM d, yyyy") }}
+            </div>
+          </div>
+
+          <div class="news-right">
+            <a href="{{ item.link }}" target="_blank" rel="noopener">
+              Link →
+            </a>
+          </div>
+
         </div>
+      {% endfor %}
+    </div>
 
-        <p class="blog-excerpt">
-          {{ post.templateContent | truncate(170, true, '...') | safe }}
-        </p>
+  </section>
+  {% endif %}
 
-        <a class="blog-read" href="{{ post.url | url }}">
-          Read →
-        </a>
 
-      </article>
-    {% endfor %}
 
-  </main>
+  <!-- BLOG POSTS -->
+  <section class="blog-section">
+
+    <h2 class="section-title">Blog</h2>
+
+    <main class="blog-list">
+
+      {% for post in posts | reverse %}
+        <article class="blog-item">
+
+          <div class="blog-top">
+            <h2 class="blog-title">
+              <a href="{{ post.url | url }}">
+                {{ post.data.title }}
+              </a>
+            </h2>
+
+            <time class="blog-date">
+              {{ post.date | date("MMMM d, yyyy") }}
+            </time>
+          </div>
+
+          <p class="blog-excerpt">
+            {{ post.templateContent | truncate(170, true, '...') | safe }}
+          </p>
+
+          <a class="blog-read" href="{{ post.url | url }}">
+            Read →
+          </a>
+
+        </article>
+      {% endfor %}
+
+    </main>
+
+  </section>
 
 </section>
