@@ -675,7 +675,57 @@ a:hover {
 .blog-title a:hover{
   color: #a855f7;
 }
+.section-title{
+  margin: 40px 0 16px;
+  font-size: 1.4rem;
+}
 
+
+/* NEWS / PUBLICATIONS */
+
+.news-list{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.news-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding:14px 16px;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:14px;
+  background:rgba(255,255,255,0.02);
+}
+
+.news-title a{
+  font-size:1.05rem;
+  font-weight:600;
+  text-decoration:none;
+  color:rgba(255,255,255,0.08);
+}
+
+.news-title a:hover{
+  color:#a855f7;
+}
+
+.news-meta{
+  margin-top:6px;
+  font-size:0.9rem;
+  opacity:0.65;
+}
+
+.news-right a{
+  font-size:0.9rem;
+  text-decoration:none;
+  opacity:0.8;
+  white-space:nowrap;
+}
+
+.news-right a:hover{
+  opacity:1;
+}
 .blog-date{
   font-size: 0.9rem;
   opacity: 0.65;
@@ -692,7 +742,7 @@ a:hover {
 .blog-read{
   text-decoration: none;
   font-size: 0.95rem;
-  color: var(--purple);
+  color: #a855f7;
   opacity: 0.9;
 }
 
