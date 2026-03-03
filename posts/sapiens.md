@@ -3,12 +3,14 @@ title: "My thoughts on Yuval Noah Harari's 'Sapiens'"
 date: 2021-09-04
 tags: [writing, thoughts, Sapiens]
 layout: "post.njk"
+description: "The importance of fiction"
+image: '/assets/images/sapiens.png'
 ---
 
 <img src="{{'/assets/images/sapiens.png'| url}}"
      alt="AI generated image of evolution"
      style="display:block; margin:1.5rem auto; max-width:400px; border-radius:8px;">
-<div style="text-align: justify">
+<div class="notebook">
 <h2>My thoughts on Yuval Noah Harari's 'Sapiens'</h2>
 <i>History done right. A book of the ages, for the ages.</i>
 

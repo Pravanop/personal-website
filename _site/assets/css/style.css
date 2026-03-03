@@ -16,9 +16,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background:
+  /* background:
     linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-    url("/assets/images/landing_pagev2.jpeg") no-repeat center center/cover;
+    url("/personal-website/assets/images/landing_pagev2.jpeg") no-repeat center center/cover; */
   overflow: hidden;
   z-index:0;
 }
@@ -575,6 +575,206 @@ a:hover {
   margin-bottom: 3rem;
 }
 
+.writing-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.page-title {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.bulletin {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.bulletin-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 20px;
+}
+
+.bulletin-item h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.bulletin-item a {
+  text-decoration: none;
+  color: #a855f7;
+}
+
+.bulletin-meta {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin-top: 6px;
+}
+
+.bulletin-desc {
+  margin-top: 8px;
+  opacity: 0.85;
+}
+
+.bulletin-link a {
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.blog-list{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.blog-item{
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+    overflow: hidden;
+  background: rgba(255,255,255,0.02);
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
+}
+/* fixed thumbnail box */
+.blog-thumb{
+  width: 100%;
+  height: 240px;              /* pick your target size */
+  border-radius: 12px;
+  overflow: hidden;
+
+  display: flex;              /* centers the image */
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,0.06); /* optional: nice letterbox color */
+}
+
+/* image scales to fit inside the box */
+.blog-thumb img{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+.blog-item:hover{
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.03);
+  border-color: rgba(255,255,255,0.14);
+}
+
+.blog-top{
+  display:flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.blog-title{
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.blog-title a{
+  text-decoration: none;
+  color: #a855f7;
+}
+
+.blog-title a:hover{
+  color: rgba(255, 255, 255, 1);
+}
+.section-title{
+  margin: 40px 0 16px;
+  font-size: 1.4rem;
+}
+
+
+/* NEWS / PUBLICATIONS */
+
+.news-list{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.news-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding:14px 16px;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:14px;
+  background:rgba(255,255,255,0.02);
+}
+
+.news-title a{
+  font-size:1.05rem;
+  font-weight:600;
+  text-decoration:none;
+  color:#a855f7;
+}
+
+.news-title a:hover{
+  color:rgba(255, 255, 255, 1);
+}
+
+.news-meta{
+  margin-top:6px;
+  font-size:0.9rem;
+  opacity:0.65;
+}
+
+.news-right a{
+  font-size:0.9rem;
+  text-decoration:none;
+  opacity:0.8;
+  white-space:nowrap;
+}
+
+.news-right a:hover{
+  opacity:1;
+}
+.blog-date{
+  font-size: 0.9rem;
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
+.blog-excerpt{
+  margin: 10px 0 12px;
+  opacity: 0.85;
+  line-height: 1.55;
+  max-width: 80ch;
+}
+
+.blog-read{
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #a855f7;
+  opacity: 0.9;
+}
+
+.blog-read:hover{ opacity: 1; }
 
 /* ===============================
    BLOG CARD WITH IMAGE
@@ -600,6 +800,12 @@ a:hover {
   width: 100%;
   overflow: hidden;
   max-height: 140px; /* limit height for balance */
+}
+
+.blog-list.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
 }
 
 .post-thumb img {
@@ -784,4 +990,81 @@ textarea:focus {
     max-width: 400px;
     margin: 0 auto 2rem;
   }
+}
+
+/* Notebook-style post container */
+.notebook{
+  max-width: 760px;
+  margin: 3rem auto;
+  padding: 2.5rem 2.25rem;
+  color: #1f2937;
+    background-position-y: 9px;
+    font-size: 18px;
+    font-family: "Georgia", serif;
+    line-height: 32px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+  /* paper color */
+  background-color: #fff2a8;
+
+  /* ruled lines + grid lines */
+  background-image:
+    /* horizontal ruled lines */
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.0) 0px,
+      rgba(0,0,0,0.0) 30px,
+      rgba(0,0,0,0.12) 32px
+    );
+    /* vertical grid lines */
+    /*repeating-linear-gradient(*/
+    /*  to right,*/
+    /*  rgba(0,0,0,0.0) 0px,*/
+    /*  rgba(0,0,0,0.0) 39px,*/
+    /*  rgba(0,0,0,0.06) 40px*/
+    /*);*/
+
+  /* classic notebook left margin line */
+  position: relative;
+}
+
+.notebook::before{
+  content:"";
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.8rem;
+  width: 2px;
+  background: rgba(220, 38, 38, 0.45); /* subtle red margin */
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Typography inside notebook */
+.notebook h1, .notebook h2, .notebook h3{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.notebook p{
+  margin: 0 0 1.05rem 0;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+/* Image formatting */
+.notebook-img{
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  width: min(600px, 100%);
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+/* Optional: purple ink */
+.ink-purple{
+  color: #7c3aed; /* similar to your #a855f7 but a touch darker */
 }

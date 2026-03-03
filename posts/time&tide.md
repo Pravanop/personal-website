@@ -3,13 +3,15 @@ title: "Time and Tide"
 date: 2020-11-16
 tags: [writing, thoughts, nostalgia]
 layout: "post.njk"
+description: The most beloved NIT-K beach
+image: '/assets/images/beach.jpeg'
 ---
 
 <img src="{{'/assets/images/beach.jpeg'|url}}"
      alt="NITK Beach"
      style="display:block; margin:1.5rem auto; max-width:300px; border-radius:8px;">
      
-<div style="text-align: justify">
+<div class="notebook">
 
 <h1>Time and Tide</h1>
 <i>They say time and tide wait for none.....</i>

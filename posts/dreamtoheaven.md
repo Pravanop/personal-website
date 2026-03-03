@@ -3,13 +3,15 @@ title: "Dream To Heaven"
 date: 2019-10-10
 tags: [writing, play, shakespeare]
 layout: "post.njk"
+description: First act of a play
+image: '/assets/images/Adreamtoheaven.webp'
 ---
 
 <img src="{{'/assets/images/Adreamtoheaven.webp' | url}}"
      alt="AI generated greek tragedy play pose"
      style="display:block; margin:1.5rem auto; max-width:400px; border-radius:8px;">
 
-<div style="text-align: justify">
+<div class="notebook">
 <h2>A Dream to heaven</h2>
 
 For years I have been captivated by Shakespearean plays and his superior

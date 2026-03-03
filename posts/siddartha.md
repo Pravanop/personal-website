@@ -3,16 +3,18 @@ title: "My Thoughts on Herman Hesse's 'Siddhartha'"
 date: 2021-10-04
 tags: [writing, thoughts]
 layout: "post.njk"
+description: First act of a play
+image: '/assets/images/siddartha.webp'
 ---
 
 <img src="{{'/assets/images/siddartha.webp'|url}}"
      alt="AI generated Buddha"
-     style="display:block; margin:1.5rem auto; max-width:600px; border-radius:8px;">
+     style="display:block; margin:1.5rem auto; max-width:400px; border-radius:8px;">
      
 <article class="notebook">
 <h2>My Thoughts on Herman Hesse's 'Siddhartha'</h2>
 
-<i><span style="color:#a855f7"> Siddartha is a paradox, and leaves me more confused than I was.</span></i>
+<i><span class="ink-purple"> Siddartha is a paradox, and leaves me more confused than I was.</span></i>
 
 Siddhartha is the journey of a man through his life. The start of the
 book resembled that of The Buddha's journey and the misleading book

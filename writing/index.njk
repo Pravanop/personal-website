@@ -64,7 +64,11 @@ pagination:
 
       {% for post in posts | reverse %}
         <article class="blog-item">
-
+		  {% if post.data.image %}
+		  <div class="blog-thumb">
+		    <img src="{{ post.data.image | url }}" alt="{{ post.data.title }}">
+		  </div>
+		{% endif %}
           <div class="blog-top">
             <h2 class="blog-title">
               <a href="{{ post.url | url }}">
@@ -78,8 +82,8 @@ pagination:
           </div>
 
           <p class="blog-excerpt">
-            {{ post.templateContent | truncate(170, true, '...') | safe }}
-          </p>
+              {{ post.data.description }}
+		  </p>
 
           <a class="blog-read" href="{{ post.url | url }}">
             Read →
