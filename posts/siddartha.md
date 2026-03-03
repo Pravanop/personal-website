@@ -9,7 +9,7 @@ layout: "post.njk"
      alt="AI generated Buddha"
      style="display:block; margin:1.5rem auto; max-width:600px; border-radius:8px;">
      
-<div style="text-align: justify">
+<article class="notebook">
 <h2>My Thoughts on Herman Hesse's 'Siddhartha'</h2>
 
 <i><span style="color:#a855f7"> Siddartha is a paradox, and leaves me more confused than I was.</span></i>
@@ -70,4 +70,4 @@ Siddhartha was life altering to me in so many ways, I think I
 finally got some solace to my *seeking* nature, and maybe I will be able
 to become a *finding* person. But I know this for sure; henceforth I
 will only learn from experiences and their conclusions.
-</div>
+</article>
