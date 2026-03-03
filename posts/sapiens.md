@@ -27,9 +27,9 @@ foragers to the modern 21^st^ century beings. A remarkable feature of
 this book is the wide audience it caters to. Historians, psychologists,
 social scientists, nutritionists, athletes, minimalists and many more
 sects of society will be able to gain some insight of how their
-professions evolved from the grass roots.
+professions evolved from the grassroots.
 
-Captivating, stimulating and unputdownable, Sapiens held me hooked for
+Captivating, stimulating and **unputdownable**, Sapiens held me hooked for
 over five days. It was an intense read, which had me deeply
 introspecting the various ideologies, habits and instincts I had
 innately inscribed in me or had imbibed because of my culture and
@@ -38,12 +38,12 @@ humankind went through to come to today's level of comfort and
 technological prowess.
 
 Probably the most thought-provoking part of the book was the explanation
-of 'common myths' that we as humankind have come to think we are born
+of "common myths" that we as humankind have come to think we are born
 with. These "common myths" are the stories that bind us together, and
 they are the very essence of our society and civilizations. Theism,
 capitalism, nationalism, communism and every other ideology we have is a
 construct meant to manage humanity. To escape this construct is
-impossible, because the very imagination behind these 'common myths' are
+impossible, because the very imagination behind these "common myths" are
 the foundation stones of the evolution of Homo Sapiens. We can move from
 one myth to another, but we cannot break it. We would then be no
 different than any other primate that roams the face of this earth. This

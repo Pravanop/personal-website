@@ -7,7 +7,7 @@ layout: "post.njk"
 
 <img src="{{'/assets/images/Adreamtoheaven.webp' | url}}"
      alt="AI generated greek tragedy play pose"
-     style="display:block; margin:1.5rem auto; max-width:600px; border-radius:8px;">
+     style="display:block; margin:1.5rem auto; max-width:400px; border-radius:8px;">
 
 <div style="text-align: justify">
 <h2>A Dream to heaven</h2>
@@ -16,7 +16,7 @@ For years I have been captivated by Shakespearean plays and his superior
 use of the English Language. His use of metaphors and other literary
 devices have enthralled me.I had written some poems which I believed
 could be put in a play. So, I went ahead and wrote one act of a play in
-Shakespearean style. It is my humble dedication to my literary
+Shakespearean style. It is a humble dedication to my literary
 superstar. Though it is quite a long read, I hope it is worth it.
 
 Main characters:
