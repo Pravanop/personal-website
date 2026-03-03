@@ -669,11 +669,11 @@ a:hover {
 
 .blog-title a{
   text-decoration: none;
-  color: rgba(255,255,255,0.03);
+  color: #a855f7;
 }
 
 .blog-title a:hover{
-  color: #a855f7;
+  color: rgba(255, 255, 255, 1);
 }
 .section-title{
   margin: 40px 0 16px;
@@ -703,11 +703,11 @@ a:hover {
   font-size:1.05rem;
   font-weight:600;
   text-decoration:none;
-  color:rgba(255,255,255,0.08);
+  color:#a855f7;
 }
 
 .news-title a:hover{
-  color:#a855f7;
+  color:rgba(255, 255, 255, 1);
 }
 
 .news-meta{
