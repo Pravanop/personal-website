@@ -1041,7 +1041,12 @@ textarea:focus {
   border-radius: 2px;
   pointer-events: none;
 }
-
+.blog-content img{
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  height: auto;
+}
 /* Typography inside notebook */
 .notebook h1, .notebook h2, .notebook h3{
   margin-top: 0.5rem;
@@ -1066,5 +1071,5 @@ textarea:focus {
 
 /* Optional: purple ink */
 .ink-purple{
-  color: #7c3aed; /* similar to your #a855f7 but a touch darker */
+  color: #800000; /* similar to your #a855f7 but a touch darker */
 }
