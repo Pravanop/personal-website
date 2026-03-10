@@ -3,7 +3,7 @@ title: "My Thoughts on Herman Hesse's 'Siddhartha'"
 date: 2021-10-04
 tags: [writing, thoughts]
 layout: "post.njk"
-description: First act of a play
+description: A paradoxical book on the Self
 image: '/assets/images/siddartha.webp'
 ---
 
