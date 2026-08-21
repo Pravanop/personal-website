@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6BWQHD5FE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z6BWQHD5FE');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6BWQHD5FE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z6BWQHD5FE');
+  </script>
   <meta charset="UTF-8">
-  <title>My thoughts on Yuval Noah Harari&#39;s &#39;Sapiens&#39;</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The importance of fiction">
+  <meta name="theme-color" content="#09090b">
+  <title>My thoughts on Yuval Noah Harari&#39;s &#39;Sapiens&#39; — Pravan Omprakash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/personal-website/assets/css/style.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body class="page-body">
-  
-<header class="site-header">
-  <a href="/personal-website/" class="logo">Pravan Omprakash</a>
-  <nav class="header-nav">
-    <a href="/personal-website/sketchbook/">Sketchbook</a>
-    <a href="/personal-website/writing/">Writing</a>
-    <a href="/personal-website/photography/">Photography</a>
-    <a href="/personal-website/animation/">Animation</a>
-    <a href="/personal-website/about/">About</a>
-  </nav>
-</header>
-
-  <p><img src="/personal-website/assets/images/sapiens.png"
+<body class="page-body essay-body">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a href="/personal-website/" class="site-logo"><span class="logo-mark" aria-hidden="true">PO</span><span>Pravan Omprakash</span></a>
+    <nav class="header-nav" aria-label="Primary navigation"><a href="/personal-website/writing/">All writing</a><a href="/personal-website/about/">About</a></nav>
+  </header>
+  <main id="main-content" class="essay-shell">
+    <a class="back-link" href="/personal-website/writing/">← Back to writing</a>
+    <header class="essay-header">
+      <p class="eyebrow">Notebook entry · September 4, 2021</p>
+      <h1>My thoughts on Yuval Noah Harari&#39;s &#39;Sapiens&#39;</h1>
+      <p>The importance of fiction</p>
+    </header>
+    <article class="essay-content"><p><img src="/personal-website/assets/images/sapiens.png"
      alt="AI generated image of evolution"
      style="display:block; margin:1.5rem auto; max-width:400px; border-radius:8px;"></p>
 <div class="notebook">
@@ -102,46 +101,8 @@ evolution. The conclusions you draw might be very different from mine,
 but those conclusions will tell you more about yourself and what you
 '<i>want to want</i>'. Sapiens, is a must read, according to me. It is not
 fiction, it is not history, but certainly somewhere in between.</p>
-</div>
-
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="mailto:pravanop@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://www.instagram.com/thefellowshipofthebricks/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.youtube.com/channel/UCUO09uDYaCE_mPaIV_v5IxQ" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-  </div>
-  <p class="footer-text">
-  © Pravan Omprakash · All rights reserved
-</p>
-</footer>
-
-<!-- Global Lightbox -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img id="lightbox-img" src="" alt="expanded view">
-  <p id="lightbox-caption"></p>
-</div>
-
-<script>
-  // Lightbox JS
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const lightboxCaption = document.getElementById("lightbox-caption");
-  const closeBtn = document.querySelector(".lightbox .close");
-
-  document.addEventListener("click", e => {
-    if (e.target.matches(".photo-card img, .sketch-card img")) {
-      lightbox.style.display = "flex";
-      lightboxImg.src = e.target.src;
-      lightboxCaption.textContent = e.target.alt || "";
-      document.body.style.overflow = "hidden";
-    }
-    if (e.target === lightbox || e.target === closeBtn) {
-      lightbox.style.display = "none";
-      document.body.style.overflow = "auto";
-    }
-  });
-</script>
-
+</div></article>
+  </main>
+  <footer class="site-footer"><p class="footer-note">A place for things made slowly.</p><p class="footer-text">© Pravan Omprakash</p></footer>
 </body>
 </html>

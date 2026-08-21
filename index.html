@@ -1,104 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6BWQHD5FE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z6BWQHD5FE');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6BWQHD5FE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z6BWQHD5FE');
+  </script>
   <meta charset="UTF-8">
-  <title>Pravan Omprakash</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The creative notebook of Pravan Omprakash—photography, sketches, writing, and animation.">
+  <meta name="theme-color" content="#09090b">
+  <title>Pravan Omprakash — Creative Notebook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/personal-website/assets/css/style.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="landing-body">
-  
-  
-<div class="landing" id="landing">
-  <style>
-    .landing-body {
-      background:
-        url("/personal-website/assets/images/landing_pagev2.jpeg") no-repeat center center/cover;
-    }
-  </style>
-  <h1 class="hero-name">Pravan Omprakash</h1>
-  <p id="tagline" class="tagline typewrite"></p>
+<body class="home-body">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <nav class="main-menu">
-    <a href="/personal-website/sketchbook/">Sketchbook</a>
-    <a href="/personal-website/writing/">Writing</a>
-    <a href="/personal-website/photography/">Photography</a>
-    <a href="/personal-website/animation/">Animation</a>
-    <a href="/personal-website/about/">About</a>
-  </nav>
+  
+
+  <main id="main-content">
+    
+<section class="home-hero" style="--hero-image: url('/personal-website/assets/images/landing_pagev2.jpeg')">
+  <div class="home-wash" aria-hidden="true"></div>
+  <div class="home-content">
+    <p class="eyebrow">Creative notebook · Est. whenever inspiration strikes</p>
+    <h1>Pravan<br><em>Omprakash</em></h1>
+    <p id="tagline" class="tagline" aria-label="Scribbles, words, frames, and motion">Scribbles <span>•</span> Words <span>•</span> Frames <span>•</span> Motion</p>
+    <p class="home-intro">A scientist’s collection of images, observations, unfinished thoughts, and tiny worlds built after hours.</p>
+
+    <nav class="portal-grid" aria-label="Explore the creative notebook">
+      <a href="/personal-website/sketchbook/"><span>01</span><strong>Sketchbook</strong><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      <a href="/personal-website/writing/"><span>02</span><strong>Writing</strong><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      <a href="/personal-website/photography/"><span>03</span><strong>Photography</strong><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      <a href="/personal-website/about/"><span>04</span><strong>About</strong><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </nav>
+
+    <a class="research-bridge" href="https://pravanop.github.io/pravan-professional-website/" target="_blank" rel="noopener">
+      Looking for my research? Visit the professional portfolio
+      <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+    </a>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-note">A place for things made slowly.</p>
+    <div class="footer-links" aria-label="Social links">
+      <a href="mailto:pravanop@gmail.com" aria-label="Email Pravan"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/thefellowshipofthebricks/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/channel/UCUO09uDYaCE_mPaIV_v5IxQ" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+    </div>
+    <p class="footer-text">© <span data-current-year></span> Pravan Omprakash</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox-close" type="button" aria-label="Close image viewer"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <figure>
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
 
   <script>
-    // Typewriter for tagline only
-    const taglineEl = document.getElementById('tagline');
-    const taglineText = "Scribbles • Words • Frames • Motion"; // edit anytime
-    let idx = 0;
+    document.querySelectorAll('[data-current-year]').forEach(el => el.textContent = new Date().getFullYear());
 
-    function typeTagline() {
-      if (idx <= taglineText.length) {
-        taglineEl.textContent = taglineText.slice(0, idx++);
-        setTimeout(typeTagline, 70); // typing speed (ms per char)
-      } else {
-        // stop the cursor after done, or keep it blinking if you like
-        taglineEl.classList.add('done');
-      }
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    let lightboxTrigger = null;
+
+    function closeLightbox() {
+      if (lightbox.hidden) return;
+      lightbox.hidden = true;
+      document.body.classList.remove('lightbox-open');
+      lightboxTrigger?.focus();
     }
-    // small delay so layout settles
-    setTimeout(typeTagline, 300);
+
+    document.querySelectorAll('.gallery-trigger').forEach(button => {
+      button.addEventListener('click', () => {
+        const image = button.querySelector('img');
+        lightboxTrigger = button;
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+        lightboxCaption.textContent = button.dataset.caption || image.alt;
+        lightbox.hidden = false;
+        document.body.classList.add('lightbox-open');
+        lightboxClose.focus();
+      });
+    });
+
+    lightboxClose?.addEventListener('click', closeLightbox);
+    lightbox?.addEventListener('click', event => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') closeLightbox();
+    });
   </script>
-</div>
-
-
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="mailto:pravanop@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://www.instagram.com/thefellowshipofthebricks/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.youtube.com/channel/UCUO09uDYaCE_mPaIV_v5IxQ" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-  </div>
-  <p class="footer-text">
-  © Pravan Omprakash · All rights reserved
-</p>
-</footer>
-
-<!-- Global Lightbox -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img id="lightbox-img" src="" alt="expanded view">
-  <p id="lightbox-caption"></p>
-</div>
-
-<script>
-  // Lightbox JS
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const lightboxCaption = document.getElementById("lightbox-caption");
-  const closeBtn = document.querySelector(".lightbox .close");
-
-  document.addEventListener("click", e => {
-    if (e.target.matches(".photo-card img, .sketch-card img")) {
-      lightbox.style.display = "flex";
-      lightboxImg.src = e.target.src;
-      lightboxCaption.textContent = e.target.alt || "";
-      document.body.style.overflow = "hidden";
-    }
-    if (e.target === lightbox || e.target === closeBtn) {
-      lightbox.style.display = "none";
-      document.body.style.overflow = "auto";
-    }
-  });
-</script>
-
 </body>
 </html>
