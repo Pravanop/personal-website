@@ -1,42 +1,27 @@
 ---
 title: "Pravan Omprakash"
 layout: "base.njk"
+description: "The creative notebook of Pravan Omprakash—photography, sketches, writing, and animation."
 ---
 
-<div class="landing" id="landing">
-  <style>
-    .landing-body {
-      background:
-        url("{{ '/assets/images/landing_pagev2.jpeg' | url }}") no-repeat center center/cover;
-    }
-  </style>
-  <h1 class="hero-name">Pravan Omprakash</h1>
-  <p id="tagline" class="tagline typewrite"></p>
+<section class="home-hero" style="--hero-image: url('{{ '/assets/images/landing_pagev2.jpeg' | url }}')">
+  <div class="home-wash" aria-hidden="true"></div>
+  <div class="home-content">
+    <p class="eyebrow">Creative notebook · Est. whenever inspiration strikes</p>
+    <h1>Pravan<br><em>Omprakash</em></h1>
+    <p id="tagline" class="tagline" aria-label="Scribbles, words, frames, and motion">Scribbles <span>•</span> Words <span>•</span> Frames <span>•</span> Motion</p>
+    <p class="home-intro">A scientist’s collection of images, observations, unfinished thoughts, and tiny worlds built after hours.</p>
 
-  <nav class="main-menu">
-    <a href="{{ '/sketchbook/' | url }}">Sketchbook</a>
-    <a href="{{ '/writing/' | url }}">Writing</a>
-    <a href="{{ '/photography/' | url }}">Photography</a>
-    <a href="{{ '/animation/' | url }}">Animation</a>
-    <a href="{{ '/about/' | url }}">About</a>
-  </nav>
+    <nav class="portal-grid" aria-label="Explore the creative notebook">
+      <a href="{{ '/sketchbook/' | url }}"><span>01</span><strong>Sketchbook</strong><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      <a href="{{ '/writing/' | url }}"><span>02</span><strong>Writing</strong><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      <a href="{{ '/photography/' | url }}"><span>03</span><strong>Photography</strong><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      <a href="{{ '/about/' | url }}"><span>04</span><strong>About</strong><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </nav>
 
-  <script>
-    // Typewriter for tagline only
-    const taglineEl = document.getElementById('tagline');
-    const taglineText = "Scribbles • Words • Frames • Motion"; // edit anytime
-    let idx = 0;
-
-    function typeTagline() {
-      if (idx <= taglineText.length) {
-        taglineEl.textContent = taglineText.slice(0, idx++);
-        setTimeout(typeTagline, 70); // typing speed (ms per char)
-      } else {
-        // stop the cursor after done, or keep it blinking if you like
-        taglineEl.classList.add('done');
-      }
-    }
-    // small delay so layout settles
-    setTimeout(typeTagline, 300);
-  </script>
-</div>
+    <a class="research-bridge" href="https://pravanop.github.io/pravan-professional-website/" target="_blank" rel="noopener">
+      Looking for my research? Visit the professional portfolio
+      <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+    </a>
+  </div>
+</section>

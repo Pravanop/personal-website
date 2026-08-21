@@ -1,99 +1,58 @@
 ---
-title: "Writing & Blog"
+title: "Writing"
 layout: "base.njk"
+description: "Essays, poems, reflections, and published writing by Pravan Omprakash."
 pagination:
   data: collections.posts
   size: 10
   alias: posts
 ---
 
-<section class="writing-page-wrapper">
-
-  <!-- HEADER -->
-  <header class="writing-header">
-    <h1>Writing & Publications</h1>
-    <p class="writing-subtitle">
-      Stories, poems, and essays across platforms.
-    </p>
+<section class="page-shell writing-page">
+  <header class="page-intro">
+    <p class="eyebrow">Writing</p>
+    <h1>Notes from a mind that <em>wanders.</em></h1>
+    <p>Essays, stories, poems, cricket, books, and the occasional attempt to make sense of things.</p>
   </header>
 
-
-  <!-- PUBLICATIONS / NEWS -->
   {% if publications %}
-  <section class="publications-section">
-
-    <h2 class="section-title">Published Work</h2>
-
-    <div class="news-list">
+  <section class="published-work" aria-labelledby="published-heading">
+    <div class="section-heading">
+      <p class="eyebrow">Elsewhere</p>
+      <h2 id="published-heading">Published work</h2>
+    </div>
+    <div class="published-list">
       {% for item in publications | reverse %}
-        <div class="news-item">
-
-          <div class="news-left">
-            <div class="news-title">
-              <a href="{{ item.link }}" target="_blank" rel="noopener">
-                {{ item.title }}
-              </a>
-            </div>
-
-            <div class="news-meta">
-              {{ item.place }} • {{ item.date | date("MMMM d, yyyy") }}
-            </div>
-          </div>
-
-          <div class="news-right">
-            <a href="{{ item.link }}" target="_blank" rel="noopener">
-              <u>Link →</u>
-            </a>
-          </div>
-
-        </div>
+      <a href="{{ item.link }}" target="_blank" rel="noopener">
+        <span><strong>{{ item.title }}</strong><small>{{ item.place }} · {{ item.date | date("MMMM d, yyyy") }}</small></span>
+        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+      </a>
       {% endfor %}
     </div>
-
   </section>
   {% endif %}
 
-
-
-  <!-- BLOG POSTS -->
-  <section class="blog-section">
-
-    <h2 class="section-title">Blog</h2>
-
-    <main class="blog-list">
-
+  <section class="journal-section" aria-labelledby="journal-heading">
+    <div class="section-heading">
+      <p class="eyebrow">From the notebook</p>
+      <h2 id="journal-heading">Journal</h2>
+    </div>
+    <div class="journal-grid">
       {% for post in posts | reverse %}
-        <article class="blog-item">
-		  {% if post.data.image %}
-		  <div class="blog-thumb">
-		    <img src="{{ post.data.image | url }}" alt="{{ post.data.title }}">
-		  </div>
-		{% endif %}
-          <div class="blog-top">
-            <h2 class="blog-title">
-              <a href="{{ post.url | url }}">
-                {{ post.data.title }}
-              </a>
-            </h2>
-
-            <time class="blog-date">
-              {{ post.date | date("MMMM d, yyyy") }}
-            </time>
-          </div>
-
-          <p class="blog-excerpt">
-              {{ post.data.description }}
-		  </p>
-
-          <a class="blog-read" href="{{ post.url | url }}">
-            Read →
-          </a>
-
-        </article>
+      <article class="journal-card">
+        {% if post.data.image %}
+        <a class="journal-image" href="{{ post.url | url }}" tabindex="-1">
+          <img src="{{ post.data.image | url }}" alt="" loading="lazy">
+        </a>
+        {% endif %}
+        <div class="journal-copy">
+          <time datetime="{{ post.date | date('yyyy-MM-dd') }}">{{ post.date | date("MMMM d, yyyy") }}</time>
+          <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+          <p>{{ post.data.description }}</p>
+          <a class="read-link" href="{{ post.url | url }}">Read the piece <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
       {% endfor %}
-
-    </main>
-
+    </div>
   </section>
-
 </section>

@@ -1,15 +1,12 @@
 ---
-title: "Blog"
+title: "Writing"
 layout: "base.njk"
+description: "Essays, poems, reflections, and published writing by Pravan Omprakash."
 ---
 
-<h1>Writing & Reflections</h1>
-
-<ul>
-  {% for post in collections.posts | reverse %}
-    <li>
-      <a href="{{ post.url }}">{{ post.data.title }}</a><br>
-      <small>{{ post.date | date("MMMM d, yyyy") }}</small>
-    </li>
-  {% endfor %}
-</ul>
+<section class="page-shell quiet-page">
+  <p class="eyebrow">Writing</p>
+  <h1>The notebook has a <em>new home.</em></h1>
+  <p>Essays, poems, reflections, and the occasional deep dive now live together on the Writing page.</p>
+  <a class="button" href="{{ '/writing/' | url }}">Explore the writing <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+</section>

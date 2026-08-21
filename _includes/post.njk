@@ -1,11 +1,38 @@
-{% extends "base.njk" %}
-
-{% block content %}
-<article class="notebook>
-  <h1>{{ title }}</h1>
-  <p><em>{{ date | date("MMMM d, yyyy") }}</em></p>
-  <div class="notebook">
-    {{ content | safe }}
-  </div>
-</article>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6BWQHD5FE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z6BWQHD5FE');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description }}">
+  <meta name="theme-color" content="#09090b">
+  <title>{{ title }} — Pravan Omprakash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+</head>
+<body class="page-body essay-body">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a href="{{ '/' | url }}" class="site-logo"><span class="logo-mark" aria-hidden="true">PO</span><span>Pravan Omprakash</span></a>
+    <nav class="header-nav" aria-label="Primary navigation"><a href="{{ '/writing/' | url }}">All writing</a><a href="{{ '/about/' | url }}">About</a></nav>
+  </header>
+  <main id="main-content" class="essay-shell">
+    <a class="back-link" href="{{ '/writing/' | url }}">← Back to writing</a>
+    <header class="essay-header">
+      <p class="eyebrow">Notebook entry · {{ date | date("MMMM d, yyyy") }}</p>
+      <h1>{{ title }}</h1>
+      {% if description %}<p>{{ description }}</p>{% endif %}
+    </header>
+    <article class="essay-content">{{ content | safe }}</article>
+  </main>
+  <footer class="site-footer"><p class="footer-note">A place for things made slowly.</p><p class="footer-text">© Pravan Omprakash</p></footer>
+</body>
+</html>

@@ -1,6 +1,10 @@
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
+  // Keep generated output and working documents out of Eleventy's input graph.
+  eleventyConfig.ignores.add("_site/**");
+  eleventyConfig.ignores.add("posts_docx/**");
+
   // Copy assets (images, CSS, etc.)
   eleventyConfig.addPassthroughCopy("assets");
 

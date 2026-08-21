@@ -1,77 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6BWQHD5FE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z6BWQHD5FE');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6BWQHD5FE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z6BWQHD5FE');
+  </script>
   <meta charset="UTF-8">
-  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description or 'The creative notebook of Pravan Omprakash—photography, sketches, writing, and small experiments.' }}">
+  <meta name="theme-color" content="#09090b">
+  <title>{% if title == 'Pravan Omprakash' %}Pravan Omprakash — Creative Notebook{% else %}{{ title }} — Pravan Omprakash{% endif %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="{% if title == 'Pravan Omprakash' %}landing-body{% else %}page-body{% endif %}">
+<body class="{% if title == 'Pravan Omprakash' %}home-body{% else %}page-body{% endif %}">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
   {% if title != 'Pravan Omprakash' %}
-<header class="site-header">
-  <a href="{{ '/' | url }}" class="logo">Pravan Omprakash</a>
-  <nav class="header-nav">
-    <a href="{{ '/sketchbook/' | url }}">Sketchbook</a>
-    <a href="{{ '/writing/' | url }}">Writing</a>
-    <a href="{{ '/photography/' | url }}">Photography</a>
-    <a href="{{ '/animation/' | url }}">Animation</a>
-    <a href="{{ '/about/' | url }}">About</a>
-  </nav>
-</header>
-{% endif %}
-  {{ content | safe }}
+  <header class="site-header">
+    <a href="{{ '/' | url }}" class="site-logo" aria-label="Pravan Omprakash, home">
+      <span class="logo-mark" aria-hidden="true">PO</span>
+      <span>Pravan Omprakash</span>
+    </a>
+    <nav class="header-nav" aria-label="Primary navigation">
+      <a href="{{ '/sketchbook/' | url }}">Sketchbook</a>
+      <a href="{{ '/writing/' | url }}">Writing</a>
+      <a href="{{ '/photography/' | url }}">Photography</a>
+      <a href="{{ '/about/' | url }}">About</a>
+      <a class="professional-link" href="https://pravanop.github.io/pravan-professional-website/" target="_blank" rel="noopener">Research <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+    </nav>
+  </header>
+  {% endif %}
 
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="mailto:pravanop@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://www.instagram.com/thefellowshipofthebricks/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.youtube.com/channel/UCUO09uDYaCE_mPaIV_v5IxQ" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-note">A place for things made slowly.</p>
+    <div class="footer-links" aria-label="Social links">
+      <a href="mailto:pravanop@gmail.com" aria-label="Email Pravan"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/thefellowshipofthebricks/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/channel/UCUO09uDYaCE_mPaIV_v5IxQ" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+    </div>
+    <p class="footer-text">© <span data-current-year></span> Pravan Omprakash</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox-close" type="button" aria-label="Close image viewer"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <figure>
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
   </div>
-  <p class="footer-text">
-  © Pravan Omprakash · All rights reserved
-</p>
-</footer>
 
-<!-- Global Lightbox -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img id="lightbox-img" src="" alt="expanded view">
-  <p id="lightbox-caption"></p>
-</div>
+  <script>
+    document.querySelectorAll('[data-current-year]').forEach(el => el.textContent = new Date().getFullYear());
 
-<script>
-  // Lightbox JS
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const lightboxCaption = document.getElementById("lightbox-caption");
-  const closeBtn = document.querySelector(".lightbox .close");
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    let lightboxTrigger = null;
 
-  document.addEventListener("click", e => {
-    if (e.target.matches(".photo-card img, .sketch-card img")) {
-      lightbox.style.display = "flex";
-      lightboxImg.src = e.target.src;
-      lightboxCaption.textContent = e.target.alt || "";
-      document.body.style.overflow = "hidden";
+    function closeLightbox() {
+      if (lightbox.hidden) return;
+      lightbox.hidden = true;
+      document.body.classList.remove('lightbox-open');
+      lightboxTrigger?.focus();
     }
-    if (e.target === lightbox || e.target === closeBtn) {
-      lightbox.style.display = "none";
-      document.body.style.overflow = "auto";
-    }
-  });
-</script>
 
+    document.querySelectorAll('.gallery-trigger').forEach(button => {
+      button.addEventListener('click', () => {
+        const image = button.querySelector('img');
+        lightboxTrigger = button;
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+        lightboxCaption.textContent = button.dataset.caption || image.alt;
+        lightbox.hidden = false;
+        document.body.classList.add('lightbox-open');
+        lightboxClose.focus();
+      });
+    });
+
+    lightboxClose?.addEventListener('click', closeLightbox);
+    lightbox?.addEventListener('click', event => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') closeLightbox();
+    });
+  </script>
 </body>
 </html>
